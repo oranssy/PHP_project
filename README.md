@@ -7,7 +7,7 @@ https://oranssy.github.io/project__groupTask/html/index.html
 
 ### html      
 
-### 기본 셋팅   
+### 기본 셋팅      
 ┌(헤더)┐     
 https://oranssy.github.io/project__groupTask/html/footer/footer.html       
 ┌(푸터)┐     
