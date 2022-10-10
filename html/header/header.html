@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>헤더 01</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+  </head>
+  
+  <body>
+    <header id="header">
+          <h1><a href="#"><img src="../assets/img/logo.png" alt="지구ON 로고"></a></h1>
+          <nav class="nav">
+              <ul class="clearfix">
+                  <li><a href="#">지구ON 소개</a>
+                      <ul class="submenu">
+                          <li><a href="#">스토리</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">기후 소식</a>
+                      <ul class="submenu">
+                          <li><a href="#">국내 뉴스</a></li>
+                          <li><a href="#">해외 뉴스</a></li>
+                          <li><a href="#">캠페인 & 이벤트</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">기후 실천</a>
+                      <ul class="submenu">
+                          <li><a href="#">실천 다이어리</a></li>
+                          <li><a href="#">식물 키우기</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">제로웨이스트</a>
+                      <ul class="submenu">
+                          <li><a href="#">상품 추천</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">커뮤니티</a>
+                      <ul class="submenu">
+                          <li><a href="#">공지사항</a></li>
+                          <li><a href="#">이야기방</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </nav>
+          <div class="login__button">
+                <a href="../login/login.html">로그인</a>
+          </div>
+    </header>
+    <!-- // header-->
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    // 내비게이션
+    $(".nav > ul > li").mouseover(function () {
+        $(this).find(".submenu").stop().slideDown(200);
+    });
+    $(".nav > ul > li").mouseout(function () {
+        $(this).find(".submenu").stop().slideUp(200);
+    });
+
+    // 이미지 슬라이드 (좌우)
+    var currentIndex = 0;
+
+    setInterval(function () {
+        if (currentIndex < 2) {
+            currentIndex++;
+        } else {
+            currentIndex = 0;
+        }
+        var slidePosition = currentIndex * (-1000) + "px";
+        $(".slideList").animate({ left: slidePosition }, 400);
+    }, 3000);
+
+    // 탭 메뉴
+    var tabBtn = $(".tab-btn > ul > li");
+    var tabCont = $(".tab-cont > div");
+    
+    tabCont.hide().eq(0).show();
+    
+    tabBtn.click(function(event){
+        event.preventDefault();
+        var target = $(this);
+        var index = target.index();
+        //alert(index);
+        tabBtn.removeClass("active");
+        target.addClass("active");
+        tabCont.css("display","none");
+        tabCont.eq(index).css("display","block");
+    });
+  </script>
+</html>
