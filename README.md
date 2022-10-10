@@ -6,7 +6,7 @@ http://earth52.dothome.co.kr
 ┌(html)┐     
 https://oranssy.github.io/project__groupTask/html/index.html      
 ┌(php)┐     
-
+https://        
 
 ## html      
 
@@ -38,12 +38,13 @@ https://oranssy.github.io/project__groupTask/html/
 ┌(회원정보 입력)┐      
 https://oranssy.github.io/project__groupTask/html/        
 ┌(회원가입 완료)┐      
+https://oranssy.github.io/project__groupTask/html/        
 
 #### 커뮤니티__게시판     
 ┌(공지사항)┐      
-https://oranssy.github.io/project__groupTask/html/       
+https://oranssy.github.io/project__groupTask/html/board/boardNotice.html       
 ┌(이야기방)┐      
-https://oranssy.github.io/project__groupTask/html/          
+https://oranssy.github.io/project__groupTask/html/board/boardStory.html          
 ┌(게시글 보기)┐      
 https://oranssy.github.io/project__groupTask/html/       
 ┌(글 작성하기)┐      
