@@ -23,7 +23,7 @@
         </div>
         <div class="login__footer">
             <div class="btn">
-                <a href="../login/join.php">회원가입</a>
+                <a href="../login/joinAgree.php">회원가입</a>
                 <a href="#">아이디 찾기</a>
                 <a href="#">비밀번호 찾기</a>
             </div>
