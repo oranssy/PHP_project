@@ -37,7 +37,7 @@
                         // echo $_SESSION['youName'];                            
                     ?>       
                 </div>
-                <a class="findResultLogin__button" href="login.php">로그인 하러가기</a>
+                <a class="findResultLogin__button" href="../main/main.php">메인으로 돌아가기</a>
             </div>
             <div class="findID__footer">
                 <ul class="desc">
