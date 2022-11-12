@@ -5,7 +5,7 @@
 
     $category = $_GET['category'];
     
-    $categorySql = "SELECT * FROM newsBoard WHERE newsDelete = 0 AND newsCategory = '$category' ORDER BY newsID DESC LIMIT 10";
+    $categorySql = "SELECT * FROM newsBoard WHERE newsDelete = 0 AND newsCategory = '$category' ORDER BY newsID DESC";
     $categoryResult = $connect -> query($categorySql);
     $categoryInfo = $categoryResult -> fetch_array(MYSQLI_ASSOC);
     $categoryCount = $categoryResult -> num_rows;

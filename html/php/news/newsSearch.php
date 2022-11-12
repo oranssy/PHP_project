@@ -93,7 +93,7 @@
                 echo "<div class='news__info'>";
                 echo "<h3 class='news__title'>【".$news['newsCategory']."】".$news['newsTitle']."</h3>";
                 echo "<p class='news__desc'>".$news['newsContents']."</p>";
-                echo "<div class='news__date'><p>".$news['newsAuthor']." <em> | </em> ".date('Y-m-d', $news['newsRegTime'])."</p></div>";
+                echo "<div class='news__date'><p>".$news['youName']." <em> | </em> ".date('Y-m-d', $news['newsRegTime'])."</p></div>";
                 echo "</div>";
                 echo "</div>";
                 echo "</a>";
