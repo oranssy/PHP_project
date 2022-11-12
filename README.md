@@ -1,6 +1,6 @@
 # project  
 
-### ┌|  조별 닷홈 목차 페이지  |┐      
+### ┌  조별 닷홈 목차 페이지  ┐      
 http://earth52.dothome.co.kr/index.html       
 
 ### ┌|  개별 닷홈 목차 페이지  |┐      
